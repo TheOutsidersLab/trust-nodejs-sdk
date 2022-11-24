@@ -1,0 +1,43 @@
+{
+  "name": "trust-nodejs-sdk",
+  "private": true,
+  "version": "0.0.1",
+  "author": "Guillaume DA SILVA",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/trust-nodejs-sdk.umd.cjs",
+  "module": "./dist/trust-nodejs-sdk.js",
+  "exports": {
+    ".": {
+      "import": "./dist/trust-nodejs-sdk.js",
+      "require": "./dist/trust-nodejs-sdk.umd.cjs"
+    }
+  },
+  "types": "./dist/lib/index.d.ts",
+  "scripts": {
+    "serve": "tsc && vite build && vite",
+    "build": "tsc && vite build && tsc -P tsconfig.dts.json",
+    "lint": "eslint ./**/* --ext .ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "eslint": "^8.27.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "volta": {
+    "node": "18.12.1",
+    "npm": "9.1.2"
+  },
+  "dependencies": {
+    "ofetch": "^1.0.0",
+    "starton-nodejs-sdk": "file:../starton-nodejs-sdk/starton-nodejs-sdk-0.0.1.tgz"
+  }
+}
