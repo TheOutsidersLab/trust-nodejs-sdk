@@ -18,7 +18,7 @@ With the parameter :
 
 ## Create lease  
 Function called by the owner to create a new lease  
-With the parameters :  
+With parameters :  
 * notice Function called by the owner to create a new lease  
 * **tenantId** The id of the tenant  
 * **rentAmount** The amount of the rent in fiat  
@@ -34,4 +34,21 @@ Function called by the owner to propose to the tenant to cancel the remaining pa
 With the parameter  
    * **leaseId** The id of the lease  
 
+## Mark Rent As Not Paid
+Function called by the owner to mark a rent as not paid after the rent payment limit time is reached  
+With parameters  
+* **leaseId** The id of the lease  
+* **rentId** The id of the rent  
 
+## Mark Rent As Pending  
+Function called by the owner to set a NOT_PAID rent back to PENDING, to give the tenant a possibility to dealay his rent payment
+With parameters  
+* **leaseId** The id of the lease  
+* **rentId** The id of the rent  
+
+## get Rent Payments
+Function called to get all the payment of a lease  
+With the parameter  
+* **leaseId** The id of the lease  
+
+## get Score
