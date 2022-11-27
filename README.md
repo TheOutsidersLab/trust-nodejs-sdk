@@ -1,4 +1,3 @@
- trust-nodejs-sdk
 Trust library to use smart contract function via Starton  
 
 # Description  
@@ -7,12 +6,12 @@ This SDK is a simple solution that allows you to use the trust protocole with yo
 # How to setup the project  
 Pull both **trust-nodejs-sdk** and **trust-nodejs-sdk** in the same folder  
 
-go to the folder trust-nodejs-sdk/lib  
-modify with your API key the string  
+go to the folder _**trust-nodejs-sdk/lib**_  
+modify with your _API key_ the string  
 ```js
 constructor(API_KEY: string)
 ```
-it will allow you to create starton Object  
+it will allow you to create starton Object with **trust-nodejs-sdk**  
 
 ## Create owner  
 ```js
