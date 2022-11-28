@@ -2,6 +2,11 @@
 
 Trust library to use smart contract function via Starton
 
+# Description
+
+This SDK is a simple solution that allows you to use the trust protocole with your web2 server.
+You just need to follow step by step this README =)
+
 # Installation
 
 Create a ```.npmrc``` file with the following text
@@ -18,10 +23,6 @@ yarn add @theoutsiderslab/trust-nodejs-sdk
 ```
 
 This library support both UMD and ESModule
-
-# Description
-This SDK is a simple solution that allows you to use the trust protocole with your web2 server.
-You just need to follow step by step this README =)
 
 # How to set up the project
 
