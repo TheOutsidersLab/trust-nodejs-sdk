@@ -1,5 +1,5 @@
 {
-  "name": "trust-nodejs-sdk",
+  "name": "@theoutsiderslab/trust-nodejs-sdk",
   "private": true,
   "version": "0.0.1",
   "author": "Guillaume DA SILVA",
@@ -37,7 +37,7 @@
     "npm": "9.1.2"
   },
   "dependencies": {
-    "ofetch": "^1.0.0",
-    "starton-nodejs-sdk": "file:../starton-nodejs-sdk/starton-nodejs-sdk-0.0.1.tgz"
+    "@theoutsiderslab/starton-nodejs-sdk": "^1.0.0",
+    "ofetch": "^1.0.0"
   }
 }

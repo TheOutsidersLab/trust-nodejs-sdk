@@ -1,16 +1,17 @@
-import Starton from "starton-nodejs-sdk";
+import Starton from "@theoutsiderslab/starton-nodejs-sdk";
 import OwnerID from "./contracts/OwnerID";
 import Lease from "./contracts/Lease";
-import { ofetch } from "ofetch";
+import { $Fetch, ofetch } from "ofetch";
 
 export default class Trust {
   public readonly $starton: Starton
-  private readonly theGraphInstance = ofetch.create({
-    baseURL: ''
-  })
+  private readonly theGraphInstance: $Fetch
 
-  constructor(API_KEY: string) {
+  constructor(API_KEY: string, graphURL = 'http://localhost:8000/subgraphs/name/trust-protocol') {
     this.$starton = new Starton(API_KEY)
+    this.theGraphInstance = ofetch.create({
+      baseURL: graphURL
+    })
   }
 
   /** Must be called to initialize starton project */
