@@ -1,6 +1,5 @@
 {
   "name": "@theoutsiderslab/trust-nodejs-sdk",
-  "private": true,
   "version": "1.0.0",
   "author": "Guillaume DA SILVA",
   "license": "MIT",
