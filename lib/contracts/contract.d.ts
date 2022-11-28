@@ -1,4 +1,4 @@
-import { Network } from "starton-nodejs-sdk/dist/types/Parameters";
+import { Network } from '@theoutsiderslab/starton-nodejs-sdk'
 
 interface Contract {
   network: Network
